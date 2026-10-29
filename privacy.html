@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy &mdash; Title Shot</title>
+<meta name="description" content="Privacy policy for the Title Shot mobile game. The app collects nothing and sends nothing off the device.">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #121214;
+    --surface: #1b1b1f;
+    --line: #34343b;
+    --text: #f2eee6;
+    --muted: #a8a49b;
+    --accent: #ff4d61;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  header { padding: 56px 0 8px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 10px; }
+  h3 { font-size: 1rem; margin: 26px 0 8px; color: var(--muted); }
+  p { margin: 0 0 16px; }
+  ul { margin: 0 0 16px; padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  a:hover { color: var(--text); }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+  }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 12px 0 28px; }
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 0 0 8px;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+  nav.crumbs { padding-top: 32px; font-size: 0.9rem; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <nav class="crumbs"><a href="index.html">&larr; Title Shot</a></nav>
+
+  <header>
+    <h1>Privacy policy</h1>
+  </header>
+  <p class="meta">Title Shot: MMA Career Sim for iOS and Android &middot; Last updated 29 October 2026</p>
+
+  <div class="lede">
+    <p><strong>Title Shot does not collect any data about you.</strong> It has
+    no account system, no servers, and no code that sends anything anywhere.
+    Your career is saved as a small file on your own phone, and that is the
+    only place it exists.</p>
+  </div>
+
+  <h2>Who we are</h2>
+
+  <p>Title Shot is made and published by Vibalyze O&Uuml;. Because the app
+  collects no personal data, we are not the controller of any personal data
+  through it. You can reach us at
+  <a href="mailto:mert@maindtec.de">mert@maindtec.de</a>.</p>
+
+  <h2>What we collect</h2>
+
+  <p>Nothing. The app contains no analytics service, no advertising libraries,
+  no crash reporting service, no in-app purchase libraries and no social or
+  sign-in integrations. It does not ask for your email address, your contacts,
+  your location, your photos, your microphone or your camera. It does not read
+  your advertising identifier or any other device identifier.</p>
+
+  <p>The app has no networking code of its own. On Android its manifest does
+  not request the <code>INTERNET</code> permission. The only system features it uses are
+  the one that tells it where its own private storage folder is, so it can
+  write your save files there, and the system&rsquo;s own &ldquo;rate this
+  app&rdquo; prompt, described below.</p>
+
+  <h2>What the app stores on your device</h2>
+
+  <p>One file, <code>career.json</code>, inside the app&rsquo;s own documents
+  folder. It is unusually small, because of how the game is built: the game is
+  deterministic, so instead of saving the state of your career it saves the
+  instructions for rebuilding it, and replays them when you come back.</p>
+
+  <p>The whole file is:</p>
+
+  <ul>
+    <li>a seed &mdash; one number the game uses to decide what happens</li>
+    <li>the name and nickname you typed for your fighter</li>
+    <li>the background you picked (kickboxer, wrestler, and so on)</li>
+    <li>the list of choices you made, in order</li>
+    <li>two small numbers the game uses to check the file still matches its
+    own version of the writing and the rules</li>
+  </ul>
+
+  <p>That is all of it. There are no timestamps, no device information and no
+  identifiers. It is plain readable JSON and you can open it with any text
+  editor. None of it is transmitted.</p>
+
+  <p>The name you type is treated as a character name, not as your name. It is
+  never sent anywhere and never shown to anyone else, because there is nobody
+  else in the app.</p>
+
+  <p>A second file, <code>hall_of_fame.json</code>, keeps a one-line summary
+  of each career you finish &mdash; the fighter&rsquo;s name and nickname,
+  final record, belts, title defences, age at retirement, the ending and the
+  seed &mdash; so the start screen can show your past careers. It stays on the
+  device like the save.</p>
+
+  <p>A third, even smaller file, <code>review.json</code>, records only when
+  the game last offered the rating prompt, so that it does not ask too often.
+  It holds dates and counts and nothing about you.</p>
+
+  <p>The game&rsquo;s content &mdash; every event, every line of fight
+  commentary &mdash; ships inside the app as bundled files. Nothing is
+  downloaded at runtime, so there is no request to a content server and
+  nothing to log.</p>
+
+  <h3>Device backups</h3>
+
+  <p>Because the save lives in the app&rsquo;s documents folder, it is picked
+  up by your phone&rsquo;s normal backup: Android Auto Backup on Android, and
+  device or iCloud backup on iOS. That is deliberate, so reinstalling the app
+  does not delete a career in progress. Those backups are handled by Apple and
+  Google under their own privacy policies and your own backup settings. We
+  cannot see them, and we have no way to read your save.</p>
+
+  <h2>The rating prompt</h2>
+
+  <p>After a big win, the game may ask the operating system to show its
+  standard &ldquo;rate this app&rdquo; sheet, at most a few times ever, and
+  never after a loss. That sheet is drawn and run by Apple or Google, not by
+  us. If you leave a rating or review, it goes to the store under the
+  store&rsquo;s own privacy policy, and we only ever see what the store
+  publishes.</p>
+
+  <h2>Accounts, online play, leaderboards</h2>
+
+  <p>There are none. There is no login, no friends list, no chat, no cloud save
+  and no online leaderboard. The other characters in the game &mdash; your
+  opponents, your coach, the promoters, the commentators &mdash; are invented
+  by the game. They are not other people and they are never presented as
+  other people. The entire game works with the phone in aeroplane mode.</p>
+
+  <p>If online features are ever added, this page will be updated before they
+  ship and the store listing&rsquo;s privacy answers will be redone to
+  match.</p>
+
+  <h2>Advertising and purchases</h2>
+
+  <p>The app contains no advertising and no in-app purchases. There is no ad
+  network in the build, so there is no ad profiling, no App Tracking
+  Transparency prompt and nothing to opt out of. Nothing in the game can be
+  bought, and no fight can be paid for.</p>
+
+  <h2>Deleting your data</h2>
+
+  <p>Uninstalling Title Shot deletes the app&rsquo;s documents folder, and with
+  it the save, the hall of fame and the rating-prompt file. There is nothing
+  left on a server, because there is no server.</p>
+
+  <p>Two things to know:</p>
+
+  <ul>
+    <li>Your phone&rsquo;s backup may still hold a copy after you uninstall.
+    Clearing that is done in your device&rsquo;s backup settings, not in the
+    game.</li>
+    <li>Starting a new career replaces the existing one. There is one save, and
+    beginning again overwrites it.</li>
+  </ul>
+
+  <h2>Children</h2>
+
+  <p>Title Shot is intended for players aged 12 and over and is not directed
+  at young children, but little of that matters here: the app collects no
+  personal data from anyone, of any age. There are no ads, no purchases, no
+  chat, no user profiles and no way for one player to see another
+  player&rsquo;s content. Nothing a child types into the game leaves the
+  device.</p>
+
+  <p>We do not knowingly collect personal information from children, because
+  we do not collect personal information at all. If you believe something in
+  the app contradicts this, please write to the address below and we will fix
+  it.</p>
+
+  <h2>Your rights</h2>
+
+  <p>Data protection law, including the GDPR, gives you rights to access,
+  correct, export and delete personal data held about you. We hold none, so
+  there is nothing for us to hand over or erase. Your save file is yours, on
+  your device, and you can read it with any text editor.</p>
+
+  <h2>Changes to this policy</h2>
+
+  <p>If the app starts doing something this page does not describe &mdash;
+  analytics, ads, purchases, cloud save &mdash; this page is updated first,
+  with a new date at the top, and the store privacy forms are updated with it.
+  We will not quietly add collection under an old policy.</p>
+
+  <h2>Contact</h2>
+
+  <p>Questions about privacy, or anything on this page:
+  <a href="mailto:mert@maindtec.de">mert@maindtec.de</a>.</p>
+
+  <footer>
+    <p><a href="index.html">Home</a> &middot; <a href="terms.html">Terms of use</a> &middot; <a href="support.html">Support</a></p>
+    <p>Title Shot is made and published by Vibalyze O&Uuml;.</p>
+  </footer>
+
+</main>
+</body>
+</html>

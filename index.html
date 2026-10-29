@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Title Shot &mdash; an MMA career simulator</title>
+<meta name="description" content="A whole fight career, from your first amateur bout to the day you hang up the gloves. Fights you can read, no energy, no waiting. For iOS, with Android to follow.">
+<meta property="og:title" content="Title Shot">
+<meta property="og:description" content="A whole fight career. No energy, no waiting. Fights you can read.">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #121214;
+    --surface: #1b1b1f;
+    --line: #34343b;
+    --text: #f2eee6;
+    --muted: #a8a49b;
+    --accent: #ff4d61;
+    --accent2: #e0b23a;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  .rule { width: 48px; height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent2)); margin: 88px 0 24px; }
+  h1 {
+    font-size: clamp(2.4rem, 10vw, 4.2rem);
+    line-height: 1;
+    margin: 0 0 20px;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+  }
+  .lede { font-size: 1.25rem; line-height: 1.5; color: var(--muted); margin: 0 0 40px; max-width: 30rem; }
+  h2 { font-size: 1.15rem; margin: 48px 0 10px; }
+  p { margin: 0 0 16px; }
+  ul { margin: 0 0 16px; padding-left: 20px; }
+  li { margin-bottom: 10px; }
+  a { color: var(--accent); }
+  a:hover { color: var(--text); }
+  .quote {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 0 0 18px;
+    color: var(--text);
+  }
+  .quote p { margin: 0 0 12px; }
+  .quote p:last-child { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  .choices { list-style: none; padding: 0; margin: 0; }
+  .choices li {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    color: var(--muted);
+  }
+  footer {
+    margin-top: 64px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="rule"></div>
+  <h1>TITLE SHOT</h1>
+
+  <p class="lede">A whole fight career. No energy, no waiting. Fights you can read.</p>
+
+  <h2>What it is</h2>
+
+  <p>A life simulator about a mixed martial arts career. You are nineteen,
+  fighting on the local amateur circuit for tickets you have to sell yourself.
+  Fifteen years later you could be the undisputed champion, a gatekeeper the
+  prospects have to get past, or the coach of your own gym. One career feed,
+  one button, and fight nights you watch round by round.</p>
+
+  <p>You pick a background (kickboxer, college wrestler, BJJ black belt or
+  street brawler) and climb from the amateurs to the regional Coastline
+  Fighting Championship to the Global Fighting League and its fifteen-man
+  rankings. Every rung is a fight you can lose.</p>
+
+  <div class="quote">
+    <p>A dentist offers $600 to put his name on your banner, if you wear his
+    mouthguard. It has his phone number molded on the front.</p>
+    <ul class="choices">
+      <li>Take the deal, wear the guard</li>
+      <li>Banner yes, mouthguard no</li>
+      <li>Keep your own guard</li>
+    </ul>
+    <p>&mdash; one event, of more than two hundred</p>
+  </div>
+
+  <h2>How it works</h2>
+
+  <ul>
+    <li><strong>Fights you can read.</strong> Every fight is simulated moment
+    by moment, and the moments that mattered come through as play-by-play.
+    You set the game plan, make the corner call between rounds, and decide
+    whether to swarm or stay patient when someone gets hurt.</li>
+    <li><strong>Real judging.</strong> Three judges score every round on their
+    own, so close fights go to split decisions and finishes come in rounds
+    and minutes.</li>
+    <li><strong>Camp.</strong> Pick a training focus and an intensity. Push
+    too hard and you get hurt; train too light and he comes in sharper.</li>
+    <li><strong>Choose your fights.</strong> Two or three offers each time,
+    each with an honest odds band, a purse and a rank. Short notice pays more.
+    Easy fights pay less.</li>
+    <li><strong>A career with a shape.</strong> Damage you take early shows up
+    late. After thirty the body starts to collect. At some point the question
+    is &ldquo;one more fight?&rdquo;, and only you can answer it.</li>
+    <li>Twelve endings, from Undisputed to One fight too many. At the end,
+    Corner Notes shows the real numbers: your career damage, your chin, and
+    the odds you actually beat.</li>
+  </ul>
+
+  <h2>All fiction</h2>
+
+  <p>Every fighter, gym, promotion, title and commentator in Title Shot is
+  invented. No real athlete or organisation appears in the game, and it is
+  not affiliated with or endorsed by any promotion, league or sanctioning
+  body.</p>
+
+  <h2>What it does not do</h2>
+
+  <p>No ads. No in-app purchases. No timers or energy. No accounts, no
+  analytics, no tracking, and no networking code at all &mdash; it works in
+  aeroplane mode. Your career is a small file on your own phone. See the
+  <a href="privacy.html">privacy policy</a>, which is short because there is
+  nothing to describe.</p>
+
+  <h2>Get it</h2>
+
+  <p>Coming to iPhone first, with Android to follow. Write to
+  <a href="mailto:mert@maindtec.de">mert@maindtec.de</a> if you want to be on
+  the TestFlight.</p>
+
+  <footer>
+    <p><a href="privacy.html">Privacy policy</a> &middot; <a href="terms.html">Terms of use</a> &middot; <a href="support.html">Support</a></p>
+    <p>Title Shot is made and published by Vibalyze O&Uuml;.</p>
+  </footer>
+
+</main>
+</body>
+</html>
